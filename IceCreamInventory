@@ -1,0 +1,26 @@
+let price = 0;
+inventory =[
+    ice1 = {
+    flavor: "chocolate",
+    price: 30,
+    quantity: 20
+},
+ ice2 = {
+    flavor: "strawberry",
+    price: 35,
+    quantity: 50
+} ,
+ ice3 = {
+    flavor: "vanilla",
+    price: 25,
+    quantity: 40
+}]
+
+console.log(inventory.length);
+for(i=0;i<inventory.length;i++){
+   price = price + (inventory[i].quantity * inventory[i].price)
+}
+console.log("Total price: " + price)
+console.log("Before update: " + ice1.flavor);
+ice1.flavor = "butterscotch";
+console.log("After update: " + ice1.flavor);
